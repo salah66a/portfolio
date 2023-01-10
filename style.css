@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --color: #ff6500;
+    --bg-color: #404040;
+    --text-color: white;
+    }
+nav{
+    color: transparent;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 5px 5px 20px black;
+    background-color: var(--bg-color);
+ }
+span{
+    color:var(--color);
+}
+h1 ,h2 ,h3{
+    color: var(--text-color);
+    padding-bottom: 10px;
+}
+p{
+    color: var(--color);
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: var(--color);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px;
+}
+a:hover{
+    color: var(--text-color);
+    background-color: var(--color);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.active{
+    background-color: var(--color);
+    color: var(--text-color);
+    border-radius: 30px;
+}
+ul {
+   list-style: none;
+   display: flex;
+
+}
+ul li{
+    padding: 0 10px;
+}
+
+.logo{
+font-size: 50px;
+cursor: pointer;
+}
+
+.search-box input[type =text]{
+    border-radius: 50px;
+    height: 50px;
+    width: 300px;
+    font-size: 30px;
+    padding-left: 30px;
+  
+    letter-spacing: 5px;
+}
+.search-box {
+   position: flex;
+   right: 10px;
+}
+
+.search-box i{
+    color: black;
+    font-size: 20px;
+    position: fixed;
+    top: 30px;
+    right: 70px;
+}
+
+
+                /*      home section style start     */
+
+
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:var(--bg-color);
+}
+.home-image{
+    display:flex;
+}
+.avatar-img{
+    border-radius: 40%;
+    position: absolute;
+    left: 55%;
+    bottom: 300px;
+    height: 550px;
+}
+.avatar-bg{
+   height: 500px;
+}
+.home-card{
+    width: 500px;
+}
+button{
+    height: 30px;
+    width: 110px;
+    margin: 10px;
+}
+button:hover{
+    scale: 1.2;
+    transition: 0.4s;
+}
+
+        /*  SERVICES SECTION  */
+.services{
+    background: #8D8D8D;
+    height: 500px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.services h1 {
+font-size:50px;
+color: black;
+font-weight: 900;
+}
+.services p{
+    color: black;
+    padding: 10px;
+ 
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    background: var(--color);
+    border-radius: 20px;
+    margin: auto 80px;
+    padding: 20px;
+}.card h3{
+margin-top: 10px;
+}
